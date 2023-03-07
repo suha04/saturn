@@ -2,3 +2,13 @@
     font-family: 'SavedByZero';
     src: url(../fonts/SavedByZero.otf);
 }
+
+@font-face {
+    font-family: 'SpaceAge';
+    src: url(../fonts/SpaceAge.ttf);
+}
+
+@font-face {
+    font-family: 'SphereFez';
+    src: url(../fonts/SphereFez.otf);
+}
