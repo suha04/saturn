@@ -12,3 +12,13 @@
     font-family: 'SphereFez';
     src: url(../fonts/SphereFez.otf);
 }
+
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url(../fonts/Ethnocentric.otf);
+}
+  
+@font-face {
+    font-family: 'Genos';
+    src: url(../fonts/Genos.ttf);
+}

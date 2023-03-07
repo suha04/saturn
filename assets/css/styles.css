@@ -3,10 +3,16 @@
     margin: 0;
 }
 
+html
+{
+    
+    scroll-snap-type: y mandatory;
+    
+}
+
 body
 {
     background-color: #182034;
-    height: 200vh;
 }
 
 nav
@@ -15,8 +21,8 @@ nav
     position: fixed;
     right: 0;
     z-index: 99;
-    background: linear-gradient(90deg, rgba(29,4,52,1) 0%, rgba(0,0,0,1) 100%);
-    border: 1px solid white;
+    
+    
     border-radius: 0px 0px 0px 40px;
     padding: clamp(10px, 2vw, 30px);
 }
@@ -36,14 +42,22 @@ nav
 .navElements a {
     display: flex;
     text-decoration: none;
-    font-family: 'SavedByZero';
+    font-family: 'Ethnocentric';
     color: white;
     font-size: clamp(20px, 2vw, 30px);
     border-right: 3px solid white;
     padding: 0 10px 0 10px;
 }
 
+.navElements a:hover
+{
+    background-color: rgb(148, 62, 228);
+}
 
+.navElements a:hover:first-child
+{
+    border-radius: 0 0 0 20px;
+}
 
 #logo {
     display: flex;
@@ -99,12 +113,63 @@ header .container
     
 }
 
+.container {
+    background-image: url(../img/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    scroll-snap-align: center;
+    
+    
+  }
+  
+.section {
+    
+    position: relative;
+    transform: translateY(50%);
+    width: auto;
+    height: auto;
+    padding: 50px 50px 50px 50px;
+    
+  }
+
+.szoveg
+{
+    font-size: clamp(20px, 2vw, 50px);
+    color: white;
+    font-family: 'Genos';
+   
+    
+}
+
+.szovegcim
+{
+    font-family: 'Ethnocentric';
+}
+
+.szoveg ul
+{
+    list-style: circle;
+}
+
+
+
 
 @media screen and (max-width: 800px) {
     .navElements {
         flex-direction: column;
         justify-content: center;
     }
+
+    .navElements a
+    {
+        border-radius: 0 0 0 20px;
+        padding: 10px 10px 10px 0;
+    }
+
     .navElements:last-child{
         align-items: flex-end;
     }
@@ -114,6 +179,7 @@ header .container
         border-right: 3px solid;
     }
 
+    
   }
 
 
