@@ -2,6 +2,7 @@ body
 {
     background-color: #182034;
     margin: 0;
+    height: auto;
 }
 
 nav
@@ -19,17 +20,21 @@ nav
 
 .navElements {
     display: flex;
-   
-    gap: clamp(5px, 1vw, 30px);
 }
 
-.navElements a
-{
+.navElements a {
     display: flex;
     text-decoration: none;
     font-family: 'SavedByZero';
     color: black;
-    font-size: clamp(10px, 2vw, 30px);
+    font-size: clamp(20px, 2vw, 30px);
+    border-right: 3px solid black;
+    padding: 0 10px 0 10px;
+}
+
+.navElements a:last-child
+{
+    border-right: 0;
 }
 
 #logo {
@@ -40,8 +45,22 @@ nav
     max-height: 100%;
 }
 
-#logo img
-{
+#logo img {
     max-width: 100%;
     max-height: 100%;
 }
+
+@media screen and (max-width: 800px) {
+    .navElements {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navElements:last-child{
+        align-items: flex-end;
+    }
+    .navElements a:last-child
+    {
+        border-right: 3px solid black;
+    }
+
+  }
